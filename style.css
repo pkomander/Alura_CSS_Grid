@@ -1,0 +1,36 @@
+.app {
+  background: #f1f1f1;
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  /* quando utilizar o grid e preciso definir as areas dele, criando o template e informando as 
+  quais seram os conteudos da pagina*/
+  grid-template-areas:
+    "cabecalho"
+    "conteudo"
+    "rodape";
+  grid-template-columns: auto;
+  /* em rows definimos o tamanho de cada parte do grid 50px header, 100vh main, auto para footer */
+  grid-template-rows: 50px auto auto;
+}
+
+/* a estilização do conteudo da pagina vai por meio das classes */
+.cabecalho {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  grid-area: cabecalho;
+}
+
+.conteudo {
+  padding: 0 2rem;
+  grid-area: conteudo;
+}
+
+.rodape {
+  background: #fdfdfd;
+  color: #333333;
+  font-size: 0.8rem;
+  padding: 1rem;
+  grid-area: rodape;
+  text-align: center;
+}
