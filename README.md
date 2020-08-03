@@ -1,2 +1,2 @@
 # Alura_CSS_Grid
-Estudando sobre Grid CSS
+Estudando sobre Grid CSS.
